@@ -50,3 +50,38 @@ def SetPassword():
         SetPassword()
 
 SetPassword()
+
+#Question 6
+
+counter = 0
+while counter < 13:
+    multiples = counter * 7
+    print(counter, "x 7 = ", multiples)
+    counter +=1
+
+    
+#Question 7
+counter = 0
+tt = int(input("What times table would you like?"))
+while counter < 13:
+    multiples = tt * counter
+    print(counter, "x ", tt, "= ", multiples)
+    counter +=1
+    
+    
+#Question 8
+counter = 0
+tt = int(input("what times table would you like?"))
+if tt < 0:
+    while counter < 13:
+        multiples == tt * counter
+        print(counter, "x ", tt, "= ", multiples)
+        counter +=1
+if tt >= 0:
+    while counter < 13:
+        multiples == tt * counter
+        print(counter, "x ", tt, "= ", multiples)
+    
+
+
+     
