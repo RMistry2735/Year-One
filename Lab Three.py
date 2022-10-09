@@ -72,16 +72,17 @@ while counter < 13:
 #Question 8
 counter = 0
 tt = int(input("what times table would you like?"))
-if tt < 0:
-    while counter < 13:
-        multiples == tt * counter
-        print(counter, "x ", tt, "= ", multiples)
-        counter +=1
 if tt >= 0:
     while counter < 13:
-        multiples == tt * counter
+        multiples = tt * counter
         print(counter, "x ", tt, "= ", multiples)
-    
+        counter +=1
+else:
+  counter = 12
+  while counter >= 0:
+    multiples = tt * counter
+    print(counter, "x ", tt, "= ", multiples)
+    counter -=1
 
 
      
