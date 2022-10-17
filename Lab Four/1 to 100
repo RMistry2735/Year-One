@@ -1,1 +1,9 @@
+def zerotoonehundred(value):
+    if value >= 0 and value <= 100:
+        print("True")
+    else:
+        print("False")
+
+value = int(input("Enter a number between 0 and 100"))
+zerotoonehundred(value)
 
