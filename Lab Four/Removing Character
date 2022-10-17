@@ -1,2 +1,0 @@
-text=input("Enter a message")
-print(text.rstrip(text[-1]))
