@@ -1,0 +1,16 @@
+def characters(text):
+    lower = 0
+    upper = 0
+
+    for letter in text:
+        if letter.isupper():
+            upper +=1
+        elif letter.islower():
+            lower +=1
+
+    print(upper, lower)
+
+
+text=input("Enter a message")
+characters(text)
+
