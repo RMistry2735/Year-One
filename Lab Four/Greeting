@@ -1,2 +1,7 @@
-name=input("Enter your name")
-print(name.title())
+def titlename(name):
+    print(name.title())
+
+
+name = input("Enter your name")
+titlename(name)
+
