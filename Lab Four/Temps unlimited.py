@@ -2,14 +2,19 @@ from statistics import mean
 def average(temps):
     mintemps = min(temps)
     maxtemps = max(temps)
-    meantemps1 = mean(temps)
-    choice = input("Would you like the min, max or mean?")
+    meantemps = mean(temps)
+    choice = input("Would you like the min, max or mean or none?")
     if choice.title() == "Min":
         print(mintemps)
+        average(temps)
     if choice.title() == "Max":
         print(maxtemps)
+        average(temps)
     if choice.title() == "Mean":
         print(meantemps)
+        average(temps)
+    if choice.title() == "None":
+        quit()
 
 temps = []
 
