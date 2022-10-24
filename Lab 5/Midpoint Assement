@@ -1,0 +1,31 @@
+name = input("Greetings! How should we call you?")
+allowed = "LordLady"
+if any(name.startswith(x) for x in allowed):
+    print("It shall be so", name)
+else:
+    print("You may not be known by that name")
+    
+    
+    
+uspam = int(input("How many slices of spam?"))
+spam = []
+count = 0
+while count != uspam:
+    spam.append("spam")
+    count += 1
+print("Egg with", *spam, "coming up!")
+
+
+
+
+def password(userpass):
+    pw = "parrot"
+    if userpass == pw:
+        print("Correct! You may enter")
+    else:
+        print("Incorrect! You may try again")
+        userpass = input("Greetings! What is the password?")
+        password(userpass)
+
+userpass = input("Greetings! What is the password?")
+password(userpass)
