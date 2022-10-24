@@ -1,10 +1,13 @@
+#Question 1:
+
 name = input("Greetings! How should we call you?")
 if name.startswith("Lord") or name.startswith("Lady"):
     print("It shall be so", name)
 else:
     print("You may not be known by that name")
     
-    
+#Question 2:
+
 uspam = int(input("How many slices of spam?"))
 spam = []
 count = 0
@@ -15,6 +18,7 @@ print("Egg with", *spam, "coming up!")
 
 
 
+#Question 3:
 
 def password(userpass):
     pw = "parrot"
@@ -27,3 +31,51 @@ def password(userpass):
 
 userpass = input("Greetings! What is the password?")
 password(userpass)
+
+#Question 4:
+
+def password_checker(password):
+    from string import ascii_letters as letters, digits, punctuation
+
+    has_letter = has_digit = has_punc = False
+
+    for character in password:
+        if character in letters:
+            has_letter = True
+        elif character in digits:
+            has_digit = True
+        elif character in punctuation:
+            has_punc = True
+        return has_letter and has_digit and has_punc
+
+password = input("Enter a password")
+if password_checker(password) == True:
+    print("Password has been accepted")
+
+else:
+    print("Password not accepted")
+    password = input("Enter a password")
+    password_checker(password)
+    
+    
+    
+    
+#Question 6:
+
+import statistics
+def temp():
+    rfamt = []
+    months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+    i = 0
+    while i < len(months):
+        rainfall = int(input("Enter rainfall for " + str(months[i] + " in millimeters")))
+        rfamt.append(rainfall)
+        i += 1
+    
+    print("Max Rainfall: ", max(rfamt), "mm in", (months))
+    print("Min Rainfall: ", min(rfamt), "mm")
+    print("Average Rainfall: ", round(sum(rfamt) / 12, 2), "mm")
+    print("Standard Deviation: ", round(statistics.stdev(rfamt), 2), "mm")
+
+temp()
+
