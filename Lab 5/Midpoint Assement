@@ -85,3 +85,27 @@ def temps():
     print("Standard Deviation: ", round(statistics.stdev(rfamt), 2), "mm")
 
 temps()
+
+
+#Question 7
+
+print("Welcome to the shop")
+print("We currently have apples at 35p, oranges at 25p and melons at 85p")
+basket = []
+total = 0
+while True:
+    choice = input("Choose an item to add to cart and hit enter to proceed to checkout")
+    if choice == "":
+        break
+    elif choice == "apples":
+        total += 35
+        basket.append(choice)
+    elif choice == "oranges":
+        total += 25
+        basket.append(choice)
+    elif choice == "melons":
+        total += 85
+        basket.append(choice)
+
+print("You have purchased",(basket), "at the cost of ", total)
+
