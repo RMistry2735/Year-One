@@ -63,19 +63,25 @@ else:
 #Question 6:
 
 import statistics
-def temp():
+def temps():
     rfamt = []
     months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
-    i = 0
-    while i < len(months):
-        rainfall = int(input("Enter rainfall for " + str(months[i] + " in millimeters")))
+    maxmonth = ""
+    minmonth = ""
+    for month in months:
+        rainfall = int(input(f"Enter rainfall for {month}: "))
+        if rfamt:
+            if rainfall > rfamt[-1]:
+                maxmonth = month
+            elif rainfall < rfamt[-1]:
+                minmonth = month
         rfamt.append(rainfall)
-        i += 1
-    
-    print("Max Rainfall: ", max(rfamt), "mm in", (months))
-    print("Min Rainfall: ", min(rfamt), "mm")
+
+
+
+    print("Max Rainfall: ", max(rfamt), "mm in ", maxmonth)
+    print("Min Rainfall: ", min(rfamt), "mm in ", minmonth)
     print("Average Rainfall: ", round(sum(rfamt) / 12, 2), "mm")
     print("Standard Deviation: ", round(statistics.stdev(rfamt), 2), "mm")
 
-temp()
-
+temps()
