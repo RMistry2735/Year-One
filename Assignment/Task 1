@@ -1,7 +1,7 @@
 import random
 List = ["Goat", "Aardvark", "Albatross", "Anaconda", "Ape", "Armadillo", "Baboon","Barnacle", "Bonobo", "Butterfly", "Camel", "Capybara", "Cardinal", "Carp", "Catshark", "Caterpillar",
         "Catfish", "Centipede", "Chameleon", "Cheetah", "Chickadee", "Chicken", "Chimpanzee", "Chipmunk", "Clownfish", "Cobra", "Cockroach", "Constrictor", "Cougar", "Coyote", "Crab", "Crayfish",
-        "Cricket", "Crocodile", "Cuckoo", "Cicada", "Dinosaur", "Dolphin", "Dragonfly", "Eagle", "Elephant"]
+        "Cricket", "Crocodile", "Cuckoo", "Cicada", "Dinosaur", "Dolphin", "Dragonfly", "Eagle", "Elephant", "Falcon", "Flamingo", "Fowl" ]
 
 while True:
     try:
